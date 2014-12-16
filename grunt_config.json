@@ -1,0 +1,85 @@
+{
+  "appName": "performer-",
+  "appImages": "resources/shape/images/performer-",
+  "appFolder": "/performer",
+  "cmxPath": "/cmx",
+  "resourcesPath": "/resources/shape",
+  "proxies": [
+    {
+      "context": "/shape",
+      "host": "www.srwd33.com",
+      "https": false,
+      "changeOrigin": true
+    },
+    {
+      "context": "/extcatalogapi",
+      "host": "cat.stubhub.com",
+      "https": false,
+      "changeOrigin": false
+    }
+  ],
+  "requirejsoptimizer": {
+    "out": "main.js",
+    "include": [
+        "./main.js",
+        "./controllers/search_controller",
+        "./controllers/performer_controller",
+        "./controllers/viewselector_controller"
+    ],
+    "exclude": [
+        "backbone",
+        "backbone_associations",
+        "jquery",
+        "underscore",
+        "dust",
+        "dust_helpers",
+        "foobunny",
+        "vendor",
+        "site_catalyst",
+        "foresee",
+        "jplayer",
+        "templates-bundle"
+    ],
+    "paths" : {
+        "backbone": "empty:",
+        "backbone_associations": "empty:",
+        "jquery": "empty:",
+        "underscore": "empty:",
+        "dust": "empty:",
+        "dust_helpers": "empty:",
+        "vendor": "empty:",
+        "foobunny": "empty:",
+        "site_catalyst": "empty:",
+        "foresee": "empty:",
+        "global_context": "empty:",
+        "common-utils": "empty:",
+        "profile_view": "empty:",
+        "search_view": "empty:",
+        "toolbar_view": "empty:",
+        "menu_categories_view": "empty:",
+        "menu_categories_view_container": "empty:",
+        "footer_view": "empty:",
+        "categories_view": "empty:",
+        "options_view": "empty:",
+        "sell_overlay_view": "empty:",
+        "geolocation_model": "empty:",
+        "geolocations_collection": "empty:",
+        "search_results_layout": "empty:",
+        "search_results_view_container": "empty:",
+        "search_results_view": "empty:",
+        "search_results_collection": "empty:",
+        "search_results_model": "empty:",
+        "application_helper": "empty:",
+        "ads-utils": "empty:",
+        "trackFunnel": "empty:",
+        "corsRequestHandler": "empty:",
+        "shtracker": "empty:",
+        "shcookie": "empty:",
+        "jplayer": "empty:",
+        "common": "empty:",
+        "logger": "empty:",
+        "cors_request": "empty:",
+        "templates-bundle": "empty:"
+    }
+  }
+}
