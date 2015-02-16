@@ -22,33 +22,36 @@ module.exports = function(grunt) {
 	      }
 	    }
 	  },
-	less: {
-		dev: {
-			files: [
-
-				{ src: ['**/screen.less'], dest: 'src/css/min/', expand: true, cwd: 'src/css', ext:'.css'}
-			],
-			options: {
-				//paths: ["assets/css"],
-				
-			},
-		}
+	sass: {
+    dist: {                            // Target
+      options: {                       // Target options
+        style: 'expanded'
+      },
+      files: 
+      [{
+        expand: true,
+        cwd: 'css/scss',
+        src: ['*.scss'],
+        dest: '/dev',
+        ext: '.css'
+      }]
+    }
 	},
 	watch: {
         files: "./src/css/**/*",
-        tasks: ["less"]
+        tasks: ["sass"]
     }	
   });
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('server',['connect']);
-  
+  grunt.registerTask('compile',['watch']);
   // Default task(s).
-  grunt.registerTask('default', ['uglify','less', 'connect']);
+  grunt.registerTask('default', ['uglify','sass', 'connect']);
 
 };
