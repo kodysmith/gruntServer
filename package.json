@@ -11,7 +11,6 @@
     "grunt-bg-shell": "2.3.1",
     "grunt-bower-task": "0.3.4",
     "grunt-bump": "0.0.11",
-    "grunt-casper": "0.1.4",
     "grunt-connect-proxy": "0.1.5",
     "grunt-contrib-clean": "0.4.0rc6",
     "grunt-contrib-compress": "0.4.0rc7",
@@ -30,7 +29,6 @@
     "grunt-dustjs": "1.1.1",
     "grunt-contrib-cssmin": "0.10.0",
     "grunt-express": "1.2.1",
-    "grunt-cmsdeploy": "0.2.7",
     "grunt-mocha": "0.2.1",
     "grunt-rev": "~0.1.0"
   }
