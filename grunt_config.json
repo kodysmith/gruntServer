@@ -1,31 +1,5 @@
 {
-  "appName": "performer-",
-  "appImages": "resources/shape/images/performer-",
-  "appFolder": "/performer",
-  "cmxPath": "/cmx",
-  "resourcesPath": "/resources/shape",
-  "proxies": [
-    {
-      "context": "/shape",
-      "host": "www.srwd33.com",
-      "https": false,
-      "changeOrigin": true
-    },
-    {
-      "context": "/extcatalogapi",
-      "host": "cat.stubhub.com",
-      "https": false,
-      "changeOrigin": false
-    }
-  ],
-  "requirejsoptimizer": {
-    "out": "main.js",
-    "include": [
-        "./main.js",
-        "./controllers/search_controller",
-        "./controllers/performer_controller",
-        "./controllers/viewselector_controller"
-    ],
+ 
     "exclude": [
         "backbone",
         "backbone_associations",
